@@ -1,0 +1,13 @@
+* C:\Users\iibak\OneDrive\Documents\LTspice\EENG304L Lab7.asc
+R1 N001 N002 34.4k
+VDD N001 0 1.8
+M1 N002 N002 0 0 nmos114
+Vload N003 0 0
+M2 N003 N002 0 0 nmos114
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Users\iibak\AppData\Local\LTspice\lib\cmp\standard.mos
+.dc Vload 0 1.8 0.001
+.model nmos114 nmos kp=0.4m vto=0.5v lambda=0 w = 0.72u l=0.18u;
+.backanno
+.end
